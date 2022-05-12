@@ -1,0 +1,25 @@
+* {
+  margin: auto 0;
+}
+header {
+    nav{
+        display: flex;
+        ul {
+        list-style: none;
+        display: flex;
+        }
+    }
+}
+main {
+  .accommodation-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .accommodation-card {
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  }
+}
