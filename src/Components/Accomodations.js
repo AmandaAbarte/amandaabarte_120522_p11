@@ -8,6 +8,7 @@ export default function Accommodations() {
     return (
       <div className="acc-card" key={item.id}>
         <img src={item.cover}  className="acc-cover"></img>
+        <h2 className="acc-title">{item.title}</h2>
       </div>
     );
   });
