@@ -5,7 +5,7 @@ import background from '../Assets/Background.png'
 
 export default function Header(){
     return(<header>
-        <nav class="nav">
+        <nav className="nav">
           <div className='logo'>KASA LOGO</div>
           <ul>
             <li>Home</li>
