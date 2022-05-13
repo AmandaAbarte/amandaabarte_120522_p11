@@ -48,7 +48,7 @@ export default function About() {
       isActive={item.isActive}
       toggle={() => handleDropdown(item.title)}
       title={item.title}
-      descriprion={item.description}/>
+      description={item.description}/>
   ))
   return <div className="about">
       <img src={bg}></img>
