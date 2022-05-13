@@ -76,6 +76,13 @@
 
 @media (max-width: 768px) {
   .listing-container {
+    .listing{
+      .listing-info{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
     .drop-container {
       justify-content: center;
       .dropdown {

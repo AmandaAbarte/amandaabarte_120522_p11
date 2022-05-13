@@ -448,6 +448,16 @@ footer img {
 }
 
 @media (max-width: 768px) {
+  .listing-container .listing .listing-info {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .listing-container .drop-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
