@@ -1,0 +1,25 @@
+.error {
+  @include primary-font();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $primary-colour;
+  h1 {
+    font-weight: 700;
+    font-size: 290px;
+    line-height: 142.6%;
+  }
+  p {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+  }
+  a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: $primary-colour;
+    margin: 70px;
+  }
+}
