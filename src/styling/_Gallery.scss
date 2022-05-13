@@ -1,24 +1,25 @@
 .gallery {
-    position: relative;
-    height: 420px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .image {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    .right-arrow {
-        position: absolute;
-        top: 50%;
-        right: 30px;
-    }
-    .left-arrow {
-        position: absolute;
-        top: 50%;
-        left: 30px;
-    }
+    margin-bottom: 30px;
+  position: relative;
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  overflow: hidden;
+  .image {
+      object-fit: cover;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+  }
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+  }
 }
