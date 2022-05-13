@@ -2,6 +2,7 @@ import React from "react";
 import Dropdown from "./Dropdown";
 
 export default function About() {
+    //stores data for about section dropdowns
   const [dropdown, setDropdown] = React.useState([
     {
       title: "Reliability",
@@ -29,6 +30,7 @@ export default function About() {
     },
   ]);
 
+  //on click checks titles for match with the click - if match changes active state, if not remains the same
   function handleDropdown(title) {
     setDropdown((prevDropdown) => {
       return prevDropdown.map((drop) => {
@@ -38,6 +40,7 @@ export default function About() {
       });
     });
   }
+  //maps over all dropdowns and creates individual dropdowns passing props
   const allitems = dropdown.map(item => (
       <Dropdown 
       key={item.title}

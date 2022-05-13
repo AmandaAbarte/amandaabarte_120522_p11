@@ -13,10 +13,11 @@ export default function Listing() {
     }
   });
   const [currentListing, setCurrentListing] = React.useState(...filtered);
-
+  //maps over all tags for listing and displays them
   const tags = currentListing.tags.map((tag) => {
     return <p>{tag}</p>;
   });
+  //maps over all amenities for lisitng and displays them
   const amenities = currentListing.amenities.map((item)=> {
       return(
           <ul>
