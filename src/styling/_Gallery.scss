@@ -22,4 +22,15 @@
     top: 50%;
     left: 30px;
   }
+
+  .slide {
+      opacity: 0;
+      transition: 1s ease;
+    }
+    .active {
+      opacity: 1;
+      transition: 1s;
+    }
+    
 }
+
