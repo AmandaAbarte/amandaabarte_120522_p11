@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../Assets/arrow.png";
+import arrow from "../Assets/arrowleft.png";
 
 export default function Gallery(props) {
   const [current, setCurrent] = React.useState(0);
@@ -13,25 +13,18 @@ export default function Gallery(props) {
     setCurrent(current === 0 ? length - 1 : current - 1);
   }
 
-  const arrowLeft = {
-    filter: "invert(100%)",
-    transform: "rotate(-90deg)",
-  };
-  const arrowRight = {
-    filter: "invert(100%)",
-    transform: "rotate(90deg)",
-  };
+  
   return (
     <div className="gallery">
       <img
         src={arrow}
-        style={arrowLeft}
+        // style={{transform: "rotate(-90deg)"}}
         className="left-arrow"
         onClick={prevSlide}
       ></img>
       <img
         src={arrow}
-        style={arrowRight}
+        style={{transform: "rotate(180deg)"}}
         className="right-arrow"
         onClick={nextSlide}
       ></img>

@@ -1,3 +1,6 @@
+@mixin arrowsize() {
+    width: ;
+}
 .gallery {
     margin-bottom: 30px;
   position: relative;
@@ -16,6 +19,7 @@
     position: absolute;
     top: 50%;
     right: 30px;
+    
   }
   .left-arrow {
     position: absolute;
