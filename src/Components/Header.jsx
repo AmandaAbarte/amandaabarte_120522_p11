@@ -1,6 +1,5 @@
 import React from "react";
-
-import background from "../Assets/Background.png";
+import { NavLink } from "react-router-dom";
 import pinklogo from "../Assets/pinklogo.png";
 
 export default function Header() {
@@ -9,8 +8,8 @@ export default function Header() {
       <nav className="nav">
         <img src={pinklogo} className="logo"></img>
         <ul>
-          <li>Home</li>
-          <li>About</li>
+          <li><NavLink className='nav-link' to="/" >Home</NavLink></li>
+          <li><NavLink className='nav-link' to="/about">About</NavLink></li>
         </ul>
       </nav>
       <div className="heading">
