@@ -28,7 +28,9 @@ header {
       margin-right: 20px;
       height: 40px;
     }
-    ul {
+    ul,
+    a {
+      text-decoration: none;
       padding: 0;
       list-style: none;
       display: flex;
@@ -42,10 +44,28 @@ header {
       }
     }
   }
+}
+@media (min-width: 768px) {
+  header {
+    nav {
+      img {
+        height: 55px;
+      }
+      ul,
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+main {
+  @include main-margins();
   .heading {
+    margin-bottom: 30px;
     border-radius: 25px;
     overflow: hidden;
-    height: 110px;
+    height: 220px;
     background-image: url(/src/Assets/Background.png);
     background-size: cover;
     display: flex;
@@ -55,36 +75,13 @@ header {
     p {
       @include primary-font();
       font-weight: 500;
-      font-size: 24px;
+      font-size: 48px;
       line-height: 142.6%;
       /* or 68px */
 
       color: #ffffff;
     }
   }
-}
-@media (min-width: 768px) {
-  header {
-    nav {
-      img {
-        height: 55px;
-      }
-      ul {
-        font-size: 24px;
-      }
-    }
-    .heading {
-      height: 223px;
-
-      p {
-        font-size: 48px;
-      }
-    }
-  }
-}
-
-main {
-  @include main-margins();
   .accommodation-container {
     display: flex;
     flex-direction: row;
@@ -95,7 +92,6 @@ main {
     padding-top: 40px;
 
     .acc-card {
-    
       box-sizing: border-box;
       overflow: hidden;
       margin: 20px;
@@ -142,6 +138,13 @@ main {
 }
 @media (max-width: 768px) {
   main {
+    .heading {
+      height: 110px;
+
+      p {
+        font-size: 34px;
+      }
+    }
     .accommodation-container {
       background-color: #ff6060;
       .acc-card {

@@ -35,7 +35,9 @@ header nav img {
   height: 40px;
 }
 
-header nav ul {
+header nav ul,
+header nav a {
+  text-decoration: none;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -49,14 +51,30 @@ header nav ul {
   line-height: 142.6%;
 }
 
-header nav ul li {
+header nav ul li,
+header nav a li {
   margin-left: 20px;
 }
 
-header .heading {
+@media (min-width: 768px) {
+  header nav img {
+    height: 55px;
+  }
+  header nav ul,
+  header nav a {
+    font-size: 24px;
+  }
+}
+
+main {
+  margin: 5%;
+}
+
+main .heading {
+  margin-bottom: 30px;
   border-radius: 25px;
   overflow: hidden;
-  height: 110px;
+  height: 220px;
   background-image: url(/src/Assets/Background.png);
   background-size: cover;
   display: -webkit-box;
@@ -71,33 +89,14 @@ header .heading {
   text-align: center;
 }
 
-header .heading p {
+main .heading p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 48px;
   line-height: 142.6%;
   /* or 68px */
   color: #ffffff;
-}
-
-@media (min-width: 768px) {
-  header nav img {
-    height: 55px;
-  }
-  header nav ul {
-    font-size: 24px;
-  }
-  header .heading {
-    height: 223px;
-  }
-  header .heading p {
-    font-size: 48px;
-  }
-}
-
-main {
-  margin: 5%;
 }
 
 main .accommodation-container {
@@ -163,6 +162,12 @@ main .accommodation-container .acc-card .acc-title {
 }
 
 @media (max-width: 768px) {
+  main .heading {
+    height: 110px;
+  }
+  main .heading p {
+    font-size: 34px;
+  }
   main .accommodation-container {
     background-color: #ff6060;
   }

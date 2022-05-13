@@ -18,6 +18,10 @@ export default function Accommodations() {
 
   return (
     <main>
+      <div className="heading">
+          {/* <img src={background}></img> */}
+          <p>Home Anywhere and Everywhere</p>
+      </div>
       <div className="accommodation-container">{accommodationCards}</div>
     </main>
   );

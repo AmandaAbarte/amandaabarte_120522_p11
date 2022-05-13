@@ -12,10 +12,7 @@ export default function Header() {
           <li><NavLink className='nav-link' to="/about">About</NavLink></li>
         </ul>
       </nav>
-      <div className="heading">
-          {/* <img src={background}></img> */}
-          <p>Home Anywhere and Everywhere</p>
-      </div>
+      
     </header>
   );
 }
