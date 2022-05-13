@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   color: $primary-colour;
+  height: 80%;
   h1 {
     font-weight: 700;
     font-size: 290px;
@@ -22,4 +23,15 @@
     color: $primary-colour;
     margin: 70px;
   }
+}
+
+@media (max-width: 768px) {
+    .error{
+        h1{
+            font-size: 96px;
+        }
+        P{
+            font-size: 18px;
+        }
+    }
 }

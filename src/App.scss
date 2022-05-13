@@ -1,6 +1,7 @@
 * {
   margin: auto 0;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @mixin main-margins {
@@ -173,4 +174,5 @@ footer {
 }
 
 
-@import "./styling/Error"
+@import "./styling/Error";
+@import "./styling/About";

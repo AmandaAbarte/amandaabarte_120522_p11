@@ -1,0 +1,30 @@
+.about {
+  @include main-margins();
+  @include primary-font();
+  width: 80%;
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      button {
+        width: 100%;
+        background-color: $primary-colour;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 142.6%;
+        border-radius: 5px;
+        border: none;
+        color: white;
+      }
+      .content {
+        padding: 15px;
+        background-color: #f6f6f6;
+        color: $primary-colour;
+      }
+  }
+}
