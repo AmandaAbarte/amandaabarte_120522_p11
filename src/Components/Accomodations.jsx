@@ -7,8 +7,8 @@ export default function Accommodations() {
 
   const accommodationCards = accommodation.map((item) => {
     return (
-      <Link to={`/listing/${item.id}`}>
-        <div className="acc-card" key={item.id}>
+      <Link to={`/listing/${item.id}`} key={item.id}>
+        <div className="acc-card" >
           <img src={item.cover}  className="acc-cover"></img>
           <h2 className="acc-title">{item.title}</h2>
         </div>
