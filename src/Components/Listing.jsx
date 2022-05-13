@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import accs from "../accomodations.json";
+import Gallery from "./Gallery";
 import Dropdown from "./Dropdown";
 
 export default function Listing() {
@@ -55,9 +56,19 @@ export default function Listing() {
       description={item.description ? item.description : amenities}
     />
   ));
+
+
+  const pics = currentListing.pictures.map((pic) => {
+      return (
+          <img key={pic} src={pic}></img>
+      )
+  })
   return (
     <div className="listing-container">
       <div className="listing">
+        
+        <Gallery key={currentListing.id}
+        images={pics}/>
         <div className="listing-heading">
           <h1>{currentListing.title}</h1>
           <p>{currentListing.location}</p>

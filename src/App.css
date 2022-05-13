@@ -477,4 +477,38 @@ footer img {
     width: 100%;
   }
 }
+
+.gallery {
+  position: relative;
+  height: 420px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery .right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+
+.gallery .left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+}
 /*# sourceMappingURL=App.css.map */
