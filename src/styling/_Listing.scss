@@ -25,6 +25,7 @@
       .tags {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         margin: 25px 0;
         p {
           display: flex;
@@ -38,6 +39,7 @@
           color: white;
           padding: 5px;
           margin-right: 10px;
+          margin-bottom: 10px;
           border-radius: 10px;
         }
       }
@@ -77,6 +79,15 @@
 @media (max-width: 768px) {
   .listing-container {
     .listing{
+      .listing-heading{
+        .tags {
+          width: 100%;
+          p {
+            margin-right: 5px;
+            width: 85px;
+          }
+        }
+      }
       .listing-info{
         width: 100%;
         flex-direction: row-reverse;

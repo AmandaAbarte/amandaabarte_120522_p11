@@ -372,6 +372,8 @@ footer img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 25px 0;
 }
 
@@ -393,6 +395,7 @@ footer img {
   color: white;
   padding: 5px;
   margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
 
@@ -448,6 +451,13 @@ footer img {
 }
 
 @media (max-width: 768px) {
+  .listing-container .listing .listing-heading .tags {
+    width: 100%;
+  }
+  .listing-container .listing .listing-heading .tags p {
+    margin-right: 5px;
+    width: 85px;
+  }
   .listing-container .listing .listing-info {
     width: 100%;
     -webkit-box-orient: horizontal;
