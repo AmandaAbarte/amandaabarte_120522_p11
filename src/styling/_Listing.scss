@@ -1,0 +1,53 @@
+.listing-container {
+  @include primary-font();
+  @include main-margins();
+  color: $primary-colour;
+  .listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .listing-heading {
+        margin-right: 30px;
+      h1 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 142.6%;
+      }
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+      }
+      .tags {
+        display: flex;
+        flex-direction: row;
+        margin: 25px 0;
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 142.6%;
+          width: 140px;
+          background-color: $primary-colour;
+          color: white;
+          padding: 5px;
+          margin-right: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+    .listing-info {
+      .host {
+        display: flex;
+        font-size: 18px;
+        img {
+            width: 64px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

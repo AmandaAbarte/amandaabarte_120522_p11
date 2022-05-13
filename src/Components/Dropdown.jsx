@@ -18,7 +18,7 @@ export default function Dropdown(props) {
         <img src={arrow} style={arrowDirection}></img>
       </button>
       <div className="content" style={visible}>
-        {props.descriprion}
+        {props.description}
       </div>
     </div>
   );

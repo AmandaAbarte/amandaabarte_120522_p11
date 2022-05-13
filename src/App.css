@@ -271,7 +271,7 @@ footer img {
           justify-content: center;
 }
 
-.about .dropdown {
+.dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,7 +284,7 @@ footer img {
           justify-content: center;
 }
 
-.about .dropdown button {
+.dropdown button {
   margin-top: 30px;
   width: 100%;
   background-color: #ff6060;
@@ -307,11 +307,90 @@ footer img {
   color: white;
 }
 
-.about .dropdown .content {
+.dropdown .content {
   padding: 15px;
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 5px;
   margin-bottom: 30px;
+}
+
+.listing-container {
+  font-family: "Montserrat";
+  font-style: normal;
+  margin: 5%;
+  color: #ff6060;
+}
+
+.listing-container .listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.listing-container .listing .listing-heading {
+  margin-right: 30px;
+}
+
+.listing-container .listing .listing-heading h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+}
+
+.listing-container .listing .listing-heading p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+}
+
+.listing-container .listing .listing-heading .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 25px 0;
+}
+
+.listing-container .listing .listing-heading .tags p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  width: 140px;
+  background-color: #ff6060;
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.listing-container .listing .listing-info .host {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+}
+
+.listing-container .listing .listing-info .host img {
+  width: 64px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=App.css.map */
