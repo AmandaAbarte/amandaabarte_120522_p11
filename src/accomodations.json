@@ -16,8 +16,8 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
 		},
 		"rating": "5",
-		"Location": "Paris - 17th arrondissement",
-		"Amenities": [
+		"location": "Paris - 17th arrondissement",
+		"amenities": [
 			"Basic Appliances",
 			"Microwave",
 			"Italian Shower",
@@ -48,7 +48,7 @@
 		},
 		"rating": "4",
 		"location": "Paris - 10th arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Parking space",
 			"Hair Dryer",
 			"Washing Machine",
@@ -79,7 +79,7 @@
 		},
 		"rating": "3",
 		"location": "Paris - 20th Arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Wifi",
 			"Equiped Kitchen",
 			"TV",
@@ -108,7 +108,7 @@
 		},
 		"rating": "3",
 		"location": "Paris - 11th Arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Microwave",
 			"Wifi",
 			"Private Room",
@@ -141,7 +141,7 @@
 		},
 		"rating": "5",
 		"location": "Paris - 10th Arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Fridge",
 			"Hair Dryer",
 			"Wifi",
@@ -171,7 +171,7 @@
 		},
 		"rating": "5",
 		"location": "Ile de France - Paris 18e",
-		"Amenities": [
+		"amenities": [
 			"Private Room",
 			"Parking space"
 		],
@@ -198,7 +198,7 @@
 		},
 		"rating": "3",
 		"location": "Paris - 18th Arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Bathroom",
 			"Fridge",
 			"Wifi",
@@ -231,7 +231,7 @@
 		},
 		"rating": "5",
 		"location": "Paris - 6th Arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Wifi",
 			"Hair Dryer",
 			"Washing Machine",
@@ -264,7 +264,7 @@
 		},
 		"rating": "4",
 		"location": "Paris - 14th Arrondissement",
-		"equipments": [
+		"amenities": [
 			"Air Conditioning",
 			"Washing Machine",
 			"Hair Dryer",
@@ -294,7 +294,7 @@
 		},
 		"rating": "3",
 		"location": "Paris - 11th Arrondissement",
-		"equipments": [
+		"amenities": [
 			"Park View",
 			"Heating",
 			"Dryer",
@@ -326,7 +326,7 @@
 		},
 		"rating": "4",
 		"location": "Ile de France - Paris 11e",
-		"equipments": [
+		"amenities": [
 			"Fold-out Couch",
 			"Oven",
 			"Hair Dryer",
@@ -355,7 +355,7 @@
 		},
 		"rating": "3",
 		"location": "Paris - 3rd Arrondissement",
-		"equipments": [
+		"amenities": [
 			"Storage",
 			"Bed",
 			"Hair Dryer",
@@ -389,7 +389,7 @@
 		},
 		"rating": "5",
 		"location": "Ecouen",
-		"equipments": [
+		"amenities": [
 			"Bathroom",
 			"Equiped Kitchen",
 			"Dry Toilet",
@@ -420,7 +420,7 @@
 		},
 		"rating": "4",
 		"location": "Arnouville",
-		"equipments": [
+		"amenities": [
 			"Bathroom",
 			"Equiped kitchen",
 			"Fridge",
@@ -454,7 +454,7 @@
 		},
 		"rating": "3",
 		"location": "Arnouville",
-		"Amenities": [
+		"amenities": [
 			"Kettle",
 			"Bathroom",
 			"Equiped Kitchen",
@@ -490,7 +490,7 @@
 		},
 		"rating": "3",
 		"location": "Paris - La Défense",
-		"Amenities": [
+		"amenities": [
 			"Bay Windows",
 			"TV",
 			"Oven",
@@ -523,7 +523,7 @@
 		},
 		"rating": "4",
 		"location": "Levallois",
-		"Amenities": [
+		"amenities": [
 			"TV",
 			"Oven",
 			"Fridge",
@@ -550,7 +550,7 @@
 		},
 		"rating": "2",
 		"location": "Paris - 20th Arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Kettle",
 			"Wifi",
 			"Microwave"
@@ -576,7 +576,7 @@
 		},
 		"rating": "4",
 		"location": "Paris - 13th Arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Basic Appliances",
 			"Oven",
 			"Fridge",
@@ -603,7 +603,7 @@
 		},
 		"rating": "4",
 		"location": "Paris - 13th Arrondissement",
-		"Amenities": [
+		"amenities": [
 			"Wifi",
 			"Basic Appliances",
 			"Microwave",
