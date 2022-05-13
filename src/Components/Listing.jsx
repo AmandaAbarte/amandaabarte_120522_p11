@@ -28,8 +28,12 @@ export default function Listing() {
   });
 
   const [dropdown, setDropdown] = React.useState([
-    { title: "Description", description: `${currentListing.description}`, isActive: false },
-    { title: "Amenities", description: "", isActive: false},
+    {
+      title: "Description",
+      description: `${currentListing.description}`,
+      isActive: true,
+    },
+    { title: "Amenities", description: "", isActive: true },
   ]);
   //on click checks titles for match with the click - if match changes active state, if not remains the same
   function handleDropdown(title) {
@@ -42,14 +46,15 @@ export default function Listing() {
     });
   }
   //maps over all dropdowns and creates individual dropdowns passing props
-  const allitems = dropdown.map(item => (
-    <Dropdown 
-    key={item.title}
-    isActive={item.isActive}
-    toggle={() => handleDropdown(item.title)}
-    title={item.title}
-    description={item.description ? item.description : amenities}/>
-))
+  const allitems = dropdown.map((item) => (
+    <Dropdown
+      key={item.title}
+      isActive={item.isActive}
+      toggle={() => handleDropdown(item.title)}
+      title={item.title}
+      description={item.description ? item.description : amenities}
+    />
+  ));
   return (
     <div className="listing-container">
       <div className="listing">
@@ -66,7 +71,7 @@ export default function Listing() {
           <p> rating {currentListing.rating} / 5 </p>
         </div>
       </div>
-      {allitems}
+      <div className="drop-container">{allitems}</div>
       {/* <div className="listing-about">
         <p>Description</p>
         <p>{currentListing.description}</p>

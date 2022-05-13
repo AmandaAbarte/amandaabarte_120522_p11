@@ -7,7 +7,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .listing-heading {
-        margin-right: 30px;
+      max-width: 640px;
+      margin-right: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       h1 {
         font-weight: 500;
         font-size: 36px;
@@ -43,11 +47,34 @@
         display: flex;
         font-size: 18px;
         img {
-            width: 64px;
+          width: 64px;
           border-radius: 50%;
           overflow: hidden;
         }
       }
     }
   }
+
+  .drop-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    min-height: 300px;
+    .dropdown {
+      margin: 0;
+      width: 48%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+    .listing-container{
+        .drop-container{
+            justify-content: center;
+            .dropdown{
+                width: 100%;
+            }
+        }
+    }
 }
