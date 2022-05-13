@@ -14,7 +14,7 @@ export default function Header() {
         </ul>
       </nav>
       <div className="heading">
-          <img src={background}></img>
+          {/* <img src={background}></img> */}
           <p>Home Anywhere and Everywhere</p>
       </div>
     </header>
