@@ -1,5 +1,6 @@
 import React from "react";
 import Dropdown from "./Dropdown";
+import bg from "../Assets/aboutbackground.png"
 
 export default function About() {
     //stores data for about section dropdowns
@@ -49,5 +50,8 @@ export default function About() {
       title={item.title}
       descriprion={item.descriprion}/>
   ))
-  return <div className="about">{allitems}</div>;
+  return <div className="about">
+      <img src={bg}></img>
+      {allitems}
+      </div>;
 }

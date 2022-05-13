@@ -258,7 +258,17 @@ footer img {
   margin: 5%;
   font-family: "Montserrat";
   font-style: normal;
-  width: 80%;
+  margin-bottom: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about .dropdown {
@@ -275,6 +285,7 @@ footer img {
 }
 
 .about .dropdown button {
+  margin-top: 30px;
   width: 100%;
   background-color: #ff6060;
   display: -webkit-box;
@@ -300,5 +311,7 @@ footer img {
   padding: 15px;
   background-color: #f6f6f6;
   color: #ff6060;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=App.css.map */
