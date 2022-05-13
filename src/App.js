@@ -10,6 +10,7 @@ import Accommodations from "./Components/Accomodations";
 import Footer from "./Components/Footer";
 import Listing from "./Components/Listing";
 import About from "./Components/About";
+import Error from "./Components/Error";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route path="*" element={<Error/>}/>
           <Route path="/" element={<Accommodations />}/>
           <Route path="/about" element={<About />} />
           <Route path="/listing" element={<Listing />} >
