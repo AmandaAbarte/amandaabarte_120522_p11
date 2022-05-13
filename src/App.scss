@@ -89,7 +89,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #f6f6f6;
     border-radius: 25px;
     padding-top: 40px;
@@ -98,6 +98,7 @@ main {
       box-sizing: border-box;
       overflow: hidden;
       margin: 20px;
+      min-width: 300px;
       width: calc(28%);
       height: 340px;
       border-radius: 10px;

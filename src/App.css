@@ -110,9 +110,9 @@ main .accommodation-container {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: #f6f6f6;
   border-radius: 25px;
   padding-top: 40px;
@@ -123,6 +123,7 @@ main .accommodation-container .acc-card {
           box-sizing: border-box;
   overflow: hidden;
   margin: 20px;
+  min-width: 300px;
   width: calc(28%);
   height: 340px;
   border-radius: 10px;
