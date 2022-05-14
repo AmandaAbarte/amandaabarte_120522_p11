@@ -1,5 +1,6 @@
 .about {
   @include main-margins();
+  margin-top: 2%;
   @include primary-font();
   @include max-width();
   margin-bottom: 300px;
