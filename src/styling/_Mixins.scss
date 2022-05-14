@@ -1,0 +1,11 @@
+@mixin main-margins {
+  margin: 5%;
+}
+@mixin primary-font {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+@mixin max-width {
+    max-width: 1440px;
+}
+$primary-colour: #ff6060;

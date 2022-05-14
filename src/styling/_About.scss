@@ -1,4 +1,5 @@
 .about {
+  @include max-width();
   @include main-margins();
   @include primary-font();
   margin-bottom: 300px;

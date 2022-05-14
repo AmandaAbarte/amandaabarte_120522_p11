@@ -1,7 +1,9 @@
 .listing-container {
+  
   @include primary-font();
   @include main-margins();
   color: $primary-colour;
+  max-width: 1440px;
   .listing {
     display: flex;
     flex-wrap: wrap;
