@@ -1,10 +1,11 @@
 header {
+    
     @include max-width();
     margin-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     nav {
       display: flex;
       flex-wrap: wrap;
@@ -21,6 +22,7 @@ header {
         padding: 0;
         list-style: none;
         display: flex;
+        align-items: center;
         @include primary-font();
         color: $primary-colour;
         font-weight: 500;
