@@ -3,7 +3,7 @@
   @include primary-font();
   @include main-margins();
   color: $primary-colour;
-  max-width: 1440px;
+  @include max-width();
   .listing {
     display: flex;
     flex-wrap: wrap;

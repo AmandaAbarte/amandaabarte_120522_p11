@@ -1,171 +1,22 @@
 * {
   margin: 0;
 }
-
+body {
+  display: flex;
+  justify-content: center;
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-
-
-
-header {
-  @include main-margins();
-  margin-top: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    width: 100%;
-    img {
-      margin-right: 20px;
-      height: 40px;
-    }
-    ul,
-    a {
-      text-decoration: none;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      @include primary-font();
-      color: $primary-colour;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 142.6%;
-      li {
-        margin-left: 20px;
-      }
-    }
-  }
-}
-@media (min-width: 768px) {
-  header {
-    nav {
-      img {
-        height: 55px;
-      }
-      ul,
-      a {
-        font-size: 24px;
-      }
-    }
-  }
-}
-
-main {
-  @include main-margins();
-  .heading {
-    margin-bottom: 30px;
-    border-radius: 25px;
-    overflow: hidden;
-    height: 220px;
-    background-image: url(/src/Assets/Background.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    p {
-      @include primary-font();
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 142.6%;
-      /* or 68px */
-
-      color: #ffffff;
-    }
-  }
-  .accommodation-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #f6f6f6;
-    border-radius: 25px;
-    padding-top: 40px;
-
-    .acc-card {
-      box-sizing: border-box;
-      overflow: hidden;
-      margin: 20px;
-      min-width: 300px;
-      width: calc(28%);
-      height: 340px;
-      border-radius: 10px;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          180deg,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(0, 0, 0, 0.5) 100%
-        );
-        z-index: 0;
-      }
-
-      .acc-cover {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-      .acc-title {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 142.6%;
-        color: #ffffff;
-        z-index: 1;
-      }
-    }
-  }
-}
-@media (max-width: 768px) {
-  main {
-    .heading {
-      height: 110px;
-
-      p {
-        font-size: 34px;
-      }
-    }
-    .accommodation-container {
-      .acc-card {
-        width: calc(90%);
-      }
-    }
-  }
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 200px;
-  background-color: black;
-  color: white;
-  p {
-    margin: 5px;
-  }
-  img {
-    margin: 5px;
-  }
-}
-
 @import "./styling/Mixins";
+
+
+
+@import "./styling/Header";
+
+@import "./styling/Home";
+
+@import "./styling/Footer";
+
 @import "./styling/Error";
 @import "./styling/About";
 @import "./styling/Listing";

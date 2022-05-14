@@ -1,0 +1,94 @@
+main {
+    @include main-margins();
+    @include max-width();
+    .heading {
+      margin-bottom: 30px;
+      border-radius: 25px;
+      overflow: hidden;
+      height: 220px;
+      background-image: url(/src/Assets/Background.png);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      p {
+        @include primary-font();
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 142.6%;
+        /* or 68px */
+  
+        color: #ffffff;
+      }
+    }
+    .accommodation-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: #f6f6f6;
+      border-radius: 25px;
+      padding-top: 40px;
+  
+      .acc-card {
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 20px;
+        min-width: 300px;
+        width: calc(28%);
+        height: 340px;
+        border-radius: 10px;
+        position: relative;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+          );
+          z-index: 0;
+        }
+  
+        .acc-cover {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .acc-title {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 142.6%;
+          color: #ffffff;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    main {
+      .heading {
+        height: 110px;
+  
+        p {
+          font-size: 34px;
+        }
+      }
+      .accommodation-container {
+        .acc-card {
+          width: calc(90%);
+        }
+      }
+    }
+  }
