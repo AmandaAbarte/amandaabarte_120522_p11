@@ -1,5 +1,5 @@
 .about {
-  @include main-margins();
+  width: 90%;
   margin-top: 2%;
   @include primary-font();
   @include max-width();
@@ -9,10 +9,8 @@
   justify-content: center;
   
 }
+
 .dropdown {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     button {
       margin-top: 30px;
       width: 100%;
