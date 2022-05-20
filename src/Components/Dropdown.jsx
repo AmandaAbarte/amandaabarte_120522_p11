@@ -2,8 +2,7 @@ import React from "react";
 import arrow from "../Assets/arrow.png";
 
 export default function Dropdown(props) {
-
-//checks whether the dropdown is set to active- if yes it is displayed and the icon is rotated
+  //checks whether the dropdown is set to active- if yes it is displayed and the icon is rotated
   const visible = {
     display: props.isActive ? "block" : "none",
   };

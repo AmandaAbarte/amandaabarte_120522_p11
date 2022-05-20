@@ -14,11 +14,13 @@
   border-radius: 10px;
 
   .right-arrow {
+    cursor: pointer;
     position: absolute;
     top: 45%;
     right: 30px;
   }
   .left-arrow {
+    cursor: pointer;
     position: absolute;
     top: 45%;
     left: 30px;

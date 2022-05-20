@@ -26,6 +26,9 @@
       border-radius: 5px;
       border: none;
       color: white;
+      &:hover{
+        cursor: pointer;
+      }
     }
     .content {
       padding: 15px;
@@ -33,6 +36,7 @@
       color: $primary-colour;
       border-radius: 5px;
       margin-bottom: 30px;
+      transition: all 1s ease-in-out;
       ul {
           list-style: none;
           padding: 0;

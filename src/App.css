@@ -249,12 +249,17 @@ footer img {
   color: white;
 }
 
+.dropdown button:hover {
+  cursor: pointer;
+}
+
 .dropdown .content {
   padding: 15px;
   background-color: #f6f6f6;
   color: #ff6060;
   border-radius: 5px;
   margin-bottom: 30px;
+  transition: all 1s ease-in-out;
 }
 
 .dropdown .content ul {
@@ -391,12 +396,14 @@ footer img {
 }
 
 .gallery .right-arrow {
+  cursor: pointer;
   position: absolute;
   top: 45%;
   right: 30px;
 }
 
 .gallery .left-arrow {
+  cursor: pointer;
   position: absolute;
   top: 45%;
   left: 30px;
