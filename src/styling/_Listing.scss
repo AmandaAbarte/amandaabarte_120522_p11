@@ -4,6 +4,7 @@
   @include main-margins();
   margin-top: 2%;
   color: $primary-colour;
+  width: 90%;
   @include max-width();
   .listing {
     display: flex;
