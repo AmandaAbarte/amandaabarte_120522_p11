@@ -4,7 +4,6 @@ import arrow from "../Assets/arrowleft.png";
 export default function Gallery(props) {
   const [current, setCurrent] = React.useState(0);
   const length = props.images.length;
-  console.log(props.images);
 
   function nextSlide() {
     setCurrent(current === length - 1 ? 0 : current + 1);

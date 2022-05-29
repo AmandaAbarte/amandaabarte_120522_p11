@@ -1,19 +1,18 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import accs from "../accomodations.json";
 import Gallery from "./Gallery";
 import Dropdown from "./Dropdown";
+import { useParams } from "react-router-dom";
 
-export default function Listing() {
+export default function Listing(props) {
   //checks url for id
   let { postSlug } = useParams();
   useEffect(() => {}, [postSlug]);
   //filters acccommodation array and returns only listing matching with url id
-  const filtered = accs.filter((listing) => {
+  const filtered = props.accs.filter((listing) => {
     if (listing.id == postSlug) {
       return listing;
     }
-  });
+  }); 
   const [currentListing, setCurrentListing] = React.useState(...filtered);
   //maps over all tags for listing and displays them
   const tags = currentListing.tags.map((tag) => {

@@ -4,6 +4,7 @@ import {
   Routes,
   Switch,
 } from "react-router-dom";
+import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import Accommodations from "./Components/Accomodations";
@@ -12,16 +13,18 @@ import Listing from "./Components/Listing";
 import About from "./Components/About";
 import Error from "./Components/Error";
 
+import accs from "./accomodations.json";
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
         <Routes>
-          <Route path="*" element={<Error/>}/>
-          <Route path="/" element={<Accommodations />}/>
+          <Route path="*" element={<Error />} />
+          <Route path="/" element={<Accommodations />} />
           <Route path="/about" element={<About />} />
-          <Route path="/listing" element={<Listing />} >
+          <Route path="/listing" element={<Listing accs={accs} />}>
             <Route path=":postSlug" element={<Listing />} />
           </Route>
         </Routes>
