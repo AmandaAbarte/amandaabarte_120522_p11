@@ -8,19 +8,12 @@ export default function Listing(props) {
   //checks url for id
   let { postSlug } = useParams();
   useEffect(() => {}, [postSlug]);
-  // const {id} = useParams();
+  //returns only listing matching with url id
   const currentListing = props.accs.find((listing)=> listing.id === postSlug);
-  //filters acccommodation array and returns only listing matching with url id
-  // const filtered = props.accs.filter((listing) => {
-  //   if (listing.id == postSlug) {
-  //     return listing;
-  //   }
-  // });
+  //if listing is invalid, redirect to error
   if (currentListing === undefined) {
     return <Navigate to='/error'/>
   }
-  // const [currentListing, setCurrentListing] = React.useState(...filtered);
-  //maps over all tags for listing and displays them
   const tags = currentListing.tags.map((tag) => {
     return <p key={tag}>{tag}</p>;
   });
