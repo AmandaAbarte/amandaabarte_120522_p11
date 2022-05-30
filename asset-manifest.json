@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/amandaabarte_120522_p11/static/css/main.11d63ffc.css",
+    "main.js": "/amandaabarte_120522_p11/static/js/main.b4dc52e8.js",
+    "static/js/787.97e4a96e.chunk.js": "/amandaabarte_120522_p11/static/js/787.97e4a96e.chunk.js",
+    "static/media/aboutbackground.png": "/amandaabarte_120522_p11/static/media/aboutbackground.93ebd71e7db164475d9a.png",
+    "static/media/Background.png": "/amandaabarte_120522_p11/static/media/Background.50ed470df6b987a2f1d4.png",
+    "index.html": "/amandaabarte_120522_p11/index.html",
+    "main.11d63ffc.css.map": "/amandaabarte_120522_p11/static/css/main.11d63ffc.css.map",
+    "main.b4dc52e8.js.map": "/amandaabarte_120522_p11/static/js/main.b4dc52e8.js.map",
+    "787.97e4a96e.chunk.js.map": "/amandaabarte_120522_p11/static/js/787.97e4a96e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11d63ffc.css",
+    "static/js/main.b4dc52e8.js"
+  ]
+}
