@@ -26,6 +26,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/listing" element={<Listing accs={accs} />}>
             <Route path=":postSlug" element={<Listing />} />
+            <Route path="*" element={<Listing />} />
           </Route>
         </Routes>
         <Footer />

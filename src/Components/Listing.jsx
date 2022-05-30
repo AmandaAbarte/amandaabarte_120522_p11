@@ -1,19 +1,25 @@
 import React, { useEffect } from "react";
 import Gallery from "./Gallery";
 import Dropdown from "./Dropdown";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate} from "react-router-dom";
+import Error from "./Error";
 
 export default function Listing(props) {
   //checks url for id
   let { postSlug } = useParams();
   useEffect(() => {}, [postSlug]);
+  // const {id} = useParams();
+  const currentListing = props.accs.find((listing)=> listing.id === postSlug);
   //filters acccommodation array and returns only listing matching with url id
-  const filtered = props.accs.filter((listing) => {
-    if (listing.id == postSlug) {
-      return listing;
-    }
-  }); 
-  const [currentListing, setCurrentListing] = React.useState(...filtered);
+  // const filtered = props.accs.filter((listing) => {
+  //   if (listing.id == postSlug) {
+  //     return listing;
+  //   }
+  // });
+  if (currentListing === undefined) {
+    return <Navigate to='/error'/>
+  }
+  // const [currentListing, setCurrentListing] = React.useState(...filtered);
   //maps over all tags for listing and displays them
   const tags = currentListing.tags.map((tag) => {
     return <p key={tag}>{tag}</p>;
@@ -56,40 +62,32 @@ export default function Listing(props) {
     />
   ));
 
-
   const pics = currentListing.pictures.map((pic) => {
-      return (
-          <img key={pic} src={pic}></img>
-      )
-  })
+    return <img key={pic} src={pic}></img>;
+  });
   return (
+    // realIds.includes(postSlug) ?
+    <>
+    
     <div className="listing-container">
-      <div className="listing">
-        
-        <Gallery key={currentListing.id}
-        images={pics}/>
-        <div className="listing-heading">
-          <h1>{currentListing.title}</h1>
-          <p>{currentListing.location}</p>
-          <div className="tags">{tags}</div>
-        </div>
-        <div className="listing-info">
-          <div className="host">
-            <p>{currentListing.host.name}</p>
-            <img src={currentListing.host.picture}></img>
+        <div className="listing">
+          <Gallery key={currentListing.id} images={pics} />
+          <div className="listing-heading">
+            <h1>{currentListing.title}</h1>
+            <p>{currentListing.location}</p>
+            <div className="tags">{tags}</div>
           </div>
-          <p> rating {currentListing.rating} / 5 </p>
+          <div className="listing-info">
+            <div className="host">
+              <p>{currentListing.host.name}</p>
+              <img src={currentListing.host.picture}></img>
+            </div>
+            <p> rating {currentListing.rating} / 5 </p>
+          </div>
         </div>
-      </div>
-      <div className="drop-container">{allitems}</div>
-      {/* <div className="listing-about">
-        <p>Description</p>
-        <p>{currentListing.description}</p>
-      </div>
-      <div className="listing-about">
-        <p>Amenities</p>
-        {amenities}
-      </div> */}
-    </div>
+        <div className="drop-container">{allitems}</div>
+      </div> 
+      
+    </>
   );
 }
