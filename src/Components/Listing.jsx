@@ -32,7 +32,7 @@ export default function Listing(props) {
       description: `${currentListing.description}`,
       isActive: true,
     },
-    { title: "Amenities", description: "", isActive: true },
+    { title: "Amenities", description: amenities, isActive: true },
   ]);
   //on click checks titles for match with the click - if match changes active state, if not remains the same
   function handleDropdown(title) {
@@ -51,7 +51,7 @@ export default function Listing(props) {
     isActive={item.isActive}
     toggle={() => handleDropdown(item.title)}
     title={item.title}
-    description={item.description ? item.description : amenities}
+    description={item.description}
     />
     ));
     //returns all images for listing
