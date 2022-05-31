@@ -5,15 +5,15 @@ import { useParams, Navigate} from "react-router-dom";
 import Error from "./Error";
 
 export default function Listing(props) {
-  //checks url for id
+
   let { postSlug } = useParams();
-  useEffect(() => {}, [postSlug]);
   //returns only listing matching with url id
   const currentListing = props.accs.find((listing)=> listing.id === postSlug);
   //if listing is invalid, redirect to error
   if (currentListing === undefined) {
     return <Navigate to='/error'/>
   }
+ 
   const tags = currentListing.tags.map((tag) => {
     return <p key={tag}>{tag}</p>;
   });
@@ -25,8 +25,8 @@ export default function Listing(props) {
       </ul>
     );
   });
-
-  const [dropdown, setDropdown] = React.useState([
+   //
+   const [dropdown, setDropdown] = React.useState([
     {
       title: "Description",
       description: `${currentListing.description}`,
@@ -39,28 +39,28 @@ export default function Listing(props) {
     setDropdown((prevDropdown) => {
       return prevDropdown.map((drop) => {
         return drop.title === title
-          ? { ...drop, isActive: !drop.isActive }
-          : drop;
+        ? { ...drop, isActive: !drop.isActive }
+        : drop;
       });
     });
   }
   //maps over all dropdowns and creates individual dropdowns passing props
   const allitems = dropdown.map((item) => (
     <Dropdown
-      key={item.title}
-      isActive={item.isActive}
-      toggle={() => handleDropdown(item.title)}
-      title={item.title}
-      description={item.description ? item.description : amenities}
+    key={item.title}
+    isActive={item.isActive}
+    toggle={() => handleDropdown(item.title)}
+    title={item.title}
+    description={item.description ? item.description : amenities}
     />
-  ));
-
-  const pics = currentListing.pictures.map((pic) => {
-    return <img key={pic} src={pic} ></img>;
-  });
+    ));
+    //returns all images for listing
+    const pics = currentListing.pictures.map((pic) => {
+      return <img key={pic} src={pic} ></img>;
+    });
+    //checks url for id
+    useEffect(() => {}, [postSlug]);
   return (
-    // realIds.includes(postSlug) ?
-    <>
     
     <div className="listing-container">
         <div className="listing">
@@ -81,6 +81,5 @@ export default function Listing(props) {
         <div className="drop-container">{allitems}</div>
       </div> 
       
-    </>
   );
 }
