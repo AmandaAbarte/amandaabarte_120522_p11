@@ -9,10 +9,7 @@ export default function Listing(props) {
   let { postSlug } = useParams();
   //returns only listing matching with url id
   const currentListing = props.accs.find((listing)=> listing.id === postSlug);
-  //if listing is invalid, redirect to error
-  if (currentListing === undefined) {
-    return <Navigate to='/error'/>
-  }
+  
  
   const tags = currentListing.tags.map((tag) => {
     return <p key={tag}>{tag}</p>;
@@ -59,7 +56,10 @@ export default function Listing(props) {
       return <img key={pic} src={pic} ></img>;
     });
     //checks url for id
-    useEffect(() => {}, [postSlug]);
+    useEffect(() => {//if listing is invalid, redirect to error
+      if (currentListing === undefined) {
+        return <Navigate to='/error'/>
+      }}, [postSlug]);
   return (
     
     <div className="listing-container">
