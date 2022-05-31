@@ -56,7 +56,7 @@ export default function Listing(props) {
   ));
 
   const pics = currentListing.pictures.map((pic) => {
-    return <img key={pic} src={pic}></img>;
+    return <img key={pic} src={pic} ></img>;
   });
   return (
     // realIds.includes(postSlug) ?
@@ -64,7 +64,7 @@ export default function Listing(props) {
     
     <div className="listing-container">
         <div className="listing">
-          <Gallery key={currentListing.id} images={pics} />
+          <Gallery key={currentListing.id} images={pics} title={currentListing.title}/>
           <div className="listing-heading">
             <h1>{currentListing.title}</h1>
             <p>{currentListing.location}</p>
@@ -73,7 +73,7 @@ export default function Listing(props) {
           <div className="listing-info">
             <div className="host">
               <p>{currentListing.host.name}</p>
-              <img src={currentListing.host.picture}></img>
+              <img src={currentListing.host.picture} alt={`Profile picture of ${currentListing.host.name}`}></img>
             </div>
             <p> rating {currentListing.rating} / 5 </p>
           </div>

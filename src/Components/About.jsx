@@ -51,7 +51,7 @@ export default function About() {
       description={item.description}/>
   ))
   return <div className="about">
-      <img src={bg}></img>
+      <img src={bg} alt="view of mountains, trees and the sky"></img>
       {allitems}
       </div>;
 }

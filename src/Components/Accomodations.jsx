@@ -9,7 +9,7 @@ export default function Accommodations() {
     return (
       <div className="acc-card" key={item.id}>
         <Link to={`/listing/${item.id}`}>
-          <img src={item.cover} className="acc-cover"></img>
+          <img src={item.cover} className="acc-cover" alt={item.title}></img>
           <h2 className="acc-title">{item.title}</h2>
         </Link>
       </div>

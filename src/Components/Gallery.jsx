@@ -30,7 +30,7 @@ export default function Gallery(props) {
       {props.images.map((pic, index) => {
         return (
           <div className={index === current ? "slide active" : "slide"} key={index}>
-              {index === current && (<img src={pic.key} className="image"></img>)}
+              {index === current && (<img src={pic.key} className="image" alt={`interior of ${props.title}`}></img>)}
           </div>
         );
       })}
